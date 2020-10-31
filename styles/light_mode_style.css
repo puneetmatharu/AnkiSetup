@@ -66,12 +66,12 @@ body {
 
 .question {
       margin: 0px 0px 0px 0px;
-      padding: 3% 7.5% 2.5%;
+      padding: 2% 7.5% 2.5%;
 }
 
 .answer {
       margin: 0px 0px 0px 0px;
-      padding: 3% 7.5% 2.5%;
+      padding: 2% 7.5% 2.5%;
 }
 
 /* SPECIAL FONTS, E.G. ITALIC, UNDERLINED, BOLD... */
@@ -129,7 +129,7 @@ li {
 }
 
 ul {
-      margin: 5px 0px 0px 0px;
+      margin: 5px 0px 5px 0px;
       padding-top: 0px;
 }
 
@@ -266,12 +266,3 @@ ul {
 }
 
 /* ----------------------------- TERMINAL ----------------------------- */
-
-/* ------------------------------ RANDOM ------------------------------ */
-.fab {
-      padding-left: 10px;
-}
-
-.hidden {
-      display: none;
-}
