@@ -2,9 +2,9 @@
 
 Basic CSS and images used to generate my Anki setup.
 
-![](https://github.com/PuneetMatharu/AnkiSetup/tree/main/images/demo_basic.png)
-![](https://github.com/PuneetMatharu/AnkiSetup/tree/main/images/demo_bold_coloured.png)
-![](https://github.com/PuneetMatharu/AnkiSetup/tree/main/images/demo_double_terminal.png)
+![Basic view](https://github.com/PuneetMatharu/AnkiSetup/blob/main/images/demo_basic.png)
+![Bold coloured](https://github.com/PuneetMatharu/AnkiSetup/blob/main/images/demo_bold_coloured.png)
+![Double terminal](https://github.com/PuneetMatharu/AnkiSetup/blob/main/images/demo_double_terminal.png)
 
 ## Front/back/style
 
