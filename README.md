@@ -18,7 +18,7 @@ Text in the terminal can be rendered by placing text in the fields associated wi
 
 ## Front/back/style
 
-The front and back can be found [here](light_mode_front.html) and [here](light_mode_back.html). The CSS can be found [here](light_mode_style.css). 
+The front, back and CSS can be found [here](light_mode_front.html), [here](light_mode_back.html) and [here](light_mode_style.css), respectively.
 
 ## Instructions
 
