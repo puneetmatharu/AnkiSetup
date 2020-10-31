@@ -1,0 +1,277 @@
+@import url("_styles_for_syntax_highlighting.css");
+
+html,
+body {
+      min-height: 100%;
+}
+
+.card {
+      color: black;
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      line-height: 1.7;
+      font-size: 15px;
+      font-weight: 300;
+      font-style: bold;
+      font-family: 'Montserrat';
+      border-style: solid;
+      border-width: thin .5px;
+      border-color: #fff;
+      width: 100%;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      background: #FFF;
+}
+
+
+
+/* ----------------- Styling for the individual panels ----------------- */
+
+
+.panel {
+      color: black;
+      background-color: #fff;
+
+      /* Panel shadow */
+      /*border-radius: 4px;*/
+      border-bottom-left-radius: 20px;
+      box-shadow: 8px 8px 16px #bfbfbf, -8px -8px 16px #ffffff;
+
+      /* Container padding */
+      padding: 20px 10px 10px 10px;
+}
+
+.question-area {
+      width: 85%;
+      margin: auto;
+      margin-bottom: 40px;
+
+      /* Panel trim */
+      border-left: 5px solid #f7444e;
+}
+
+.answer-area {
+      width: 85%;
+      margin: auto;
+      margin-top: 0px;
+      margin-bottom: 60px;
+
+      /* Panel trim */
+      border-left: 5px solid rgba(6, 190, 225, 0.75);
+}
+
+.question {
+      margin: 0px 0px 0px 0px;
+      padding: 3% 7.5% 2.5%;
+}
+
+.answer {
+      margin: 0px 0px 0px 0px;
+      padding: 3% 7.5% 2.5%;
+}
+
+/* SPECIAL FONTS, E.G. ITALIC, UNDERLINED, BOLD... */
+
+.question i {
+      color: #F7444E;
+      background-color: #000;
+      border-radius: 4px;
+      font-style: normal;
+      padding: 2px 3px 2.5px 3px;
+      margin: 0px 0px 0px 0px;
+}
+
+.question u {
+      color: #F7444E;
+      border-radius: 4px;
+      font-style: normal;
+      margin: 0px 0px 0px 0px;
+}
+
+.question b {
+      color: #F7444E;
+      border-radius: 4px;
+}
+
+.answer b {
+      color: rgba(6, 190, 225, 0.75);
+      border-radius: 4px;
+}
+
+.answer i {
+      color: rgba(6, 190, 225, 1);
+      background-color: #000;
+      border-radius: 4px;
+      font-style: normal;
+      padding: 1px 3px 2.5px 3px;
+      margin: 0px 0px 0px 0px;
+}
+
+.answer u {
+      color: rgba(6, 190, 225, 0.75);
+      ;
+      font-weight: bold;
+      border-radius: 4px;
+      font-style: normal;
+      margin: 0px 0px 0px 0px;
+}
+
+/* LIST STYLING */
+
+li {
+      content: "\2022";
+      color: black;
+      margin-left: -10px;
+}
+
+ul {
+      margin: 5px 0px 0px 0px;
+      padding-top: 0px;
+}
+
+/* ----------------- Styling for the individual panels ----------------- */
+
+
+.heading {
+      font-family: 'Montserrat';
+      font-size: 23px;
+      font-weight: 900;
+      width: 100%;
+
+      color: white;
+
+      /* Panel shadow */
+      border-top-right-radius: 20px;
+      box-shadow: 8px -px 16px #bfbfbf,
+            -8px -8px 16px #ffffff;
+
+      /* Panel trim */
+      border-left: 5px solid #f7444e;
+
+      /* Container padding */
+      padding: 15px 15px 0px 5px;
+
+      width: 85%;
+      margin: auto;
+      margin-top: 60px;
+      z-index: 1;
+}
+
+
+.heading-question {
+      background-color: #F7444E;
+}
+
+.heading-answer {
+      margin-top: 10px;
+      background-color: rgba(6, 190, 225, 0.75);
+      border-left: 5px solid rgba(6, 190, 225, 0.0);
+}
+
+
+/*  ------------ Resizing of elements for different devices ------------ */
+
+@media all and (max-width: 600px) {
+
+      .heading {}
+
+      .question-area {}
+
+      .answer-area {}
+}
+
+@media all and (min-width: 601px) {
+      .section {}
+}
+
+/*  ------------ Resizing of elements for different devices ------------ */
+
+/* ----------------------------- TERMINAL ----------------------------- */
+
+.image-terminal {
+      width: 100%;
+      border-radius: 20px;
+}
+
+.terminal {
+      color: white;
+      line-height: 0;
+      max-width: 900px;
+      width: 85%;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.15);
+      border-radius: 5px;
+      background-color: rgb(218, 218, 218);
+}
+
+.terminalcode {
+      font-size: 13.5px;
+      max-width: 100%;
+      background-color: #000;
+      /*rgba(45, 45, 45, 0.99);*/
+
+      padding: 15px 10px 15px 20px;
+
+      line-height: 1.5;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      overflow-wrap: break-word;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+      /* border-color: rgba(255,255,255,.3);*/
+}
+
+.terminal1 {}
+
+.terminal2 {}
+
+/* SPECIAL FONTS, E.G. ITALIC, UNDERLINED, BOLD... */
+
+.terminal u {
+      text-decoration: none;
+      font-size: 14px;
+      color: #888;
+      font-weight: normal;
+      border-radius: 4px;
+      font-style: normal;
+      padding: 1px 3px 2.5px 3px;
+      margin: 0px 0px 0px 0px;
+}
+
+.terminal2 i {
+      font-size: 14px;
+      color: red;
+      border-radius: 4px;
+      font-style: normal;
+      padding: 1px 3px 2.5px 3px;
+      margin: 0px 0px 0px 0px;
+}
+
+.terminal2 b {
+      font-size: 14px;
+      color: #32CD32;
+      font-weight: normal;
+      border-radius: 4px;
+      font-style: normal;
+      padding: 1px 3px 2.5px 3px;
+      margin: 0px 0px 0px 0px;
+}
+
+/* ----------------------------- TERMINAL ----------------------------- */
+
+/* ------------------------------ RANDOM ------------------------------ */
+.fab {
+      padding-left: 10px;
+}
+
+.hidden {
+      display: none;
+}

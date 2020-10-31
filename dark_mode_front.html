@@ -1,0 +1,20 @@
+<head>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Montserrat:wght@200;300;400;600;700;900&family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/24e900d194.js" crossorigin="anonymous"></script>
+</head>
+<div class="container">
+      <div class="question-area panel">
+            <div class="question">
+                  {{edit:Question}}
+            </div>
+            {{#Terminal (Question)}}
+            <div class="terminal terminal1">
+                  <img src="terminal-bar.png" class="image-terminal">
+                  <div class="terminalcode"> {{edit:Terminal (Question)}}</div>
+            </div>
+            {{/Terminal (Question)}}
+      </div>
+</div>
