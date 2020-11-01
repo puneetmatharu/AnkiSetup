@@ -18,7 +18,8 @@ body {
       border-style: solid;
       border-width: thin .5px;
       border-color: #fff;
-      width: 100%;
+      max-width: 100%;
+      /*max-width: 100%;*/
 }
 
 .container {
@@ -79,9 +80,11 @@ body {
 .question i {
       color: #F7444E;
       background-color: #000;
-      border-radius: 4px;
+      font-family: Consolas;
       font-style: normal;
-      padding: 2px 3px 2.5px 3px;
+      font-weight: 400;
+      border-radius: 4px;
+      padding: 4px 3px 2.5px 3px;
       margin: 0px 0px 0px 0px;
 }
 
@@ -105,9 +108,11 @@ body {
 .answer i {
       color: rgba(6, 190, 225, 1);
       background-color: #000;
-      border-radius: 4px;
+      font-family: Consolas;
       font-style: normal;
-      padding: 1px 3px 2.5px 3px;
+      font-weight: 400;
+      border-radius: 4px;
+      padding: 3.5px 3px 2.5px 3px;
       margin: 0px 0px 0px 0px;
 }
 
@@ -213,7 +218,8 @@ ul {
 .terminalcode {
       font-size: 13.5px;
       max-width: 100%;
-      background-color: #000;
+      background-color: #272822;
+      /*#000;*/
       /*rgba(45, 45, 45, 0.99);*/
 
       padding: 15px 10px 15px 20px;
