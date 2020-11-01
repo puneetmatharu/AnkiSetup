@@ -1,6 +1,6 @@
 # Anki Flashcard Setup
 
-Basic CSS and images used to generate my Anki setup.
+HTML/CSS code used to generate my Anki setup.
 
 ## Demo
 
