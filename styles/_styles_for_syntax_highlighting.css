@@ -24,18 +24,25 @@
       word-wrap: break-word;
 }
 
+.highlight pre i {
+      font-size: 13px;
+}
+
+.highlight pre b {
+      font-size: 13px;
+}
+
 .highlight .hll {
       background-color: none;
 }
 
 .highlight {
       background: none;
-      color: #f8f8f2
+      color: #f8f8f2;
 }
 
 .highlight .c {
       color: #888;
-      ;
 }
 
 /* Comment */
