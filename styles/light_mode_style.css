@@ -1,178 +1,231 @@
 @import url("_styles_for_syntax_highlighting.css");
 
+/*
+   Download these fonts from Google Fonts and save them in collection.meda/fonts/Montserrat/
+   after making the appropriate folders.  Also rename each file with an underscore prefix so it doesn't
+   get deleted when the folder gets refreshed(?).
+*/
+@font-face {
+   font-family: 'Montserrat-Black';
+   src: url("fonts/Montserrat/_Montserrat-Black.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-Bold';
+   src: url("fonts/Montserrat/_Montserrat-Bold.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-ExtraBold';
+   src: url("fonts/Montserrat/_Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-ExtraLight';
+   src: url("fonts/Montserrat/_Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-Light';
+   src: url("fonts/Montserrat/_Montserrat-Light.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-Medium';
+   src: url("fonts/Montserrat/_Montserrat-Medium.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-Regular';
+   src: url("fonts/Montserrat/_Montserrat-Regular.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-SemiBold';
+   src: url("fonts/Montserrat/_Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+   font-family: 'Montserrat-Thin';
+   src: url("fonts/Montserrat/_Montserrat-Thin.ttf");
+}
+
+
 html,
 body {
-      min-height: 100%;
+   min-height: 100%;
 }
 
 .card {
-      color: black;
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-      line-height: 1.7;
-      font-size: 15px;
-      font-weight: 300;
-      font-style: bold;
-      font-family: 'Montserrat';
-      border-style: solid;
-      border-width: thin .5px;
-      border-color: #fff;
-      max-width: 100%;
-      /*max-width: 100%;*/
+   color: black;
+   margin: 0;
+   padding: 0;
+   min-height: 100%;
+   line-height: 1.7;
+   font-size: 15px;
+   font-weight: 300;
+   font-style: bold;
+   font-family: 'Montserrat-Light';
+   border-style: solid;
+   border-width: thin .5px;
+   border-color: #fff;
+   max-width: 100%;
+   /*max-width: 100%;*/
 }
 
 .container {
-      display: flex;
-      flex-direction: column;
-      background: #FFF;
+   display: flex;
+   flex-direction: column;
+   background: #FFF;
 }
 
 /* ----------------- Styling for the individual panels ----------------- */
 
 
 .panel {
-      color: black;
-      background-color: #fff;
+   color: black;
+   background-color: #fff;
 
-      /* Panel shadow */
-      /*border-radius: 4px;*/
-      border-bottom-left-radius: 20px;
-      box-shadow: 8px 8px 16px #bfbfbf, -8px -8px 16px #ffffff;
+   /* Panel shadow */
+   /*border-radius: 4px;*/
+   border-bottom-left-radius: 20px;
+   box-shadow: 8px 8px 16px #bfbfbf, -8px -8px 16px #ffffff;
 
-      /* Container padding */
-      padding: 20px 10px 10px 10px;
+   /* Container padding */
+   padding: 20px 10px 10px 10px;
 }
 
 .question-area {
-      width: 85%;
-      margin: auto;
-      margin-bottom: 40px;
+   width: 85%;
+   margin: auto;
+   margin-bottom: 40px;
 
-      /* Panel trim */
-      border-left: 5px solid #f7444e;
+   /* Panel trim */
+   border-left: 7px solid #f7444e;
 }
 
 .answer-area {
-      width: 85%;
-      margin: auto;
-      margin-top: 0px;
-      margin-bottom: 60px;
+   width: 85%;
+   margin: auto;
+   margin-top: 0px;
+   margin-bottom: 60px;
 
-      /* Panel trim */
-      border-left: 5px solid rgba(6, 190, 225, 0.75);
+   /* Panel trim */
+   border-left: 7px solid #187bcd;
 }
 
 .question {
-      margin: 0px 0px 0px 0px;
-      padding: 2% 7.5% 2.5%;
+   margin: 0px 0px 0px 0px;
+   padding: 2% 7.5% 2.5%;
 }
 
 .answer {
-      margin: 0px 0px 0px 0px;
-      padding: 2% 7.5% 2.5%;
+   margin: 0px 0px 0px 0px;
+   padding: 2% 7.5% 2.5%;
 }
 
 /* SPECIAL FONTS, E.G. ITALIC, UNDERLINED, BOLD... */
 
 .question i {
-      color: #F7444E;
-      background-color: #000;
-      font-family: Consolas;
-      font-style: normal;
-      font-weight: 400;
-      border-radius: 4px;
-      padding: 4px 3px 2.5px 3px;
-      margin: 0px 1px 0px 0px;
+   color: #F7444E;
+   background-color: #000;
+   font-family: Consolas;
+   font-style: normal;
+   font-weight: 400;
+   border-radius: 4px;
+   padding: 4px 3px 2.5px 3px;
+   margin: 0px 1px 0px 0px;
 }
 
 .question u {
-      color: #F7444E;
-      border-radius: 4px;
-      font-style: normal;
-      margin: 0px 0px 0px 0px;
+   color: #F7444E;
+   border-radius: 4px;
+   font-style: normal;
+   margin: 0px 0px 0px 0px;
 }
 
 .question b {
-      color: #F7444E;
-      border-radius: 4px;
+   font-family: 'Montserrat-Bold';
+   color: #F7444E;
+   border-radius: 4px;
 }
 
 .answer b {
-      color: rgba(6, 190, 225, 0.75);
-      border-radius: 4px;
+   font-family: 'Montserrat-Bold';
+   color: #187bcd;
+   border-radius: 4px;
 }
 
 .answer i {
-      color: rgba(6, 190, 225, 1);
-      background-color: #000;
-      font-family: Consolas;
-      font-style: normal;
-      font-weight: 400;
-      border-radius: 4px;
-      padding: 3.5px 3px 2.5px 3px;
-      margin: 0px 1px 0px 0px;
+   color: rgb(34, 140, 227);
+   background-color: #000;
+   font-family: Consolas;
+   font-style: normal;
+   font-weight: 400;
+   border-radius: 4px;
+   padding: 3.5px 3px 2.5px 3px;
+   margin: 0px 1px 0px 0px;
 }
 
 .answer u {
-      color: rgba(6, 190, 225, 0.75);
-      ;
-      font-weight: bold;
-      border-radius: 4px;
-      font-style: normal;
-      margin: 0px 0px 0px 0px;
+   font-family: 'Montserrat-Bold';
+   color: #187bcd;
+   font-weight: bold;
+   border-radius: 4px;
+   font-style: normal;
+   margin: 0px 0px 0px 0px;
 }
 
 /* LIST STYLING */
 
 li {
-      content: "\2022";
-      color: black;
-      margin-left: -10px;
+   content: "\2022";
+   color: black;
+   margin-left: -10px;
 }
 
 ul {
-      margin: 5px 0px 5px 0px;
-      padding-top: 0px;
+   margin: 5px 0px 5px 0px;
+   padding-top: 0px;
 }
 
 /* ----------------- Styling for the individual panels ----------------- */
 
 
 .heading {
-      font-family: 'Montserrat';
-      font-size: 23px;
-      font-weight: 900;
-      width: 100%;
+   font-family: 'Montserrat-ExtraBold';
+   font-size: 23px;
+   font-weight: 900;
+   width: 100%;
 
-      color: white;
+   color: white;
 
-      /* Panel shadow */
-      border-top-right-radius: 20px;
-      box-shadow: 8px -px 16px #bfbfbf,
-            -8px -8px 16px #ffffff;
+   /* Panel shadow */
+   border-top-right-radius: 20px;
+   box-shadow: 8px -px 16px #bfbfbf,
+      -8px -8px 16px #ffffff;
 
-      /* Panel trim */
-      border-left: 5px solid #f7444e;
+   /* Panel trim */
+   border-left: 7px solid #f7444e;
 
-      /* Container padding */
-      padding: 15px 15px 0px 5px;
+   /* Container padding */
+   padding: 15px 15px 0px 5px;
 
-      width: 85%;
-      margin: auto;
-      margin-top: 60px;
-      z-index: 1;
+   width: 85%;
+   margin: auto;
+   margin-top: 60px;
+   z-index: 1;
 }
 
 
 .heading-question {
-      background-color: #F7444E;
+   background-color: #F7444E;
 }
 
 .heading-answer {
-      margin-top: 10px;
-      background-color: rgba(6, 190, 225, 0.75);
-      border-left: 5px solid rgba(6, 190, 225, 0.0);
+   margin-top: 10px;
+   background-color: #187bcd;
+   border-left: 7px solid #187bcd;
 }
 
 
@@ -180,15 +233,15 @@ ul {
 
 @media all and (max-width: 600px) {
 
-      .heading {}
+   .heading {}
 
-      .question-area {}
+   .question-area {}
 
-      .answer-area {}
+   .answer-area {}
 }
 
 @media all and (min-width: 601px) {
-      .section {}
+   .section {}
 }
 
 /*  ------------ Resizing of elements for different devices ------------ */
@@ -196,40 +249,41 @@ ul {
 /* ----------------------------- TERMINAL ----------------------------- */
 
 .image-terminal {
-      width: 100%;
-      border-radius: 20px;
+   width: 100%;
+   max-width: 900px;
+   border-radius: 6px 6px 0px 0px;
 }
 
 .terminal {
-      color: white;
-      line-height: 0;
-      max-width: 900px;
-      width: 85%;
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.15);
-      border-radius: 5px;
-      background-color: rgb(218, 218, 218);
+   color: white;
+   line-height: 0;
+   max-width: 900px;
+   width: 85%;
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.15);
+   border-radius: 5px;
+   background-color: rgb(218, 218, 218);
 }
 
 .terminalcode {
-      font-size: 13.5px;
-      max-width: 100%;
-      background-color: #000;
-      /*rgba(45, 45, 45, 0.99);*/
+   font-size: 13.5px;
+   max-width: 100%;
+   background-color: #000;
+   /*rgba(45, 45, 45, 0.99);*/
 
-      padding: 15px 10px 15px 20px;
+   padding: 15px 10px 15px 20px;
 
-      line-height: 1.5;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      overflow-wrap: break-word;
-      border-right: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      border-left: 1px solid rgba(255, 255, 255, 0.3);
+   line-height: 1.5;
+   border-bottom-left-radius: 6px;
+   border-bottom-right-radius: 6px;
+   overflow-wrap: break-word;
+   border-right: 1px solid rgba(255, 255, 255, 0.3);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+   border-left: 1px solid rgba(255, 255, 255, 0.3);
 
-      /* border-color: rgba(255,255,255,.3);*/
+   /* border-color: rgba(255,255,255,.3);*/
 }
 
 .terminal1 {}
@@ -239,33 +293,33 @@ ul {
 /* SPECIAL FONTS, E.G. ITALIC, UNDERLINED, BOLD... */
 
 .terminal u {
-      text-decoration: none;
-      font-size: 14px;
-      color: #888;
-      font-weight: normal;
-      border-radius: 4px;
-      font-style: normal;
-      padding: 1px 3px 2.5px 3px;
-      margin: 0px 0px 0px 0px;
+   text-decoration: none;
+   font-size: 14px;
+   color: #888;
+   font-weight: normal;
+   border-radius: 4px;
+   font-style: normal;
+   padding: 1px 3px 2.5px 3px;
+   margin: 0px 0px 0px 0px;
 }
 
 .terminal2 i {
-      font-size: 14px;
-      color: red;
-      border-radius: 4px;
-      font-style: normal;
-      padding: 1px 3px 2.5px 3px;
-      margin: 0px 0px 0px 0px;
+   font-size: 14px;
+   color: red;
+   border-radius: 4px;
+   font-style: normal;
+   padding: 1px 3px 2.5px 3px;
+   margin: 0px 0px 0px 0px;
 }
 
 .terminal2 b {
-      font-size: 14px;
-      color: #32CD32;
-      font-weight: normal;
-      border-radius: 4px;
-      font-style: normal;
-      padding: 1px 3px 2.5px 3px;
-      margin: 0px 0px 0px 0px;
+   font-size: 14px;
+   color: #32CD32;
+   font-weight: normal;
+   border-radius: 4px;
+   font-style: normal;
+   padding: 1px 3px 2.5px 3px;
+   margin: 0px 0px 0px 0px;
 }
 
 /* ----------------------------- TERMINAL ----------------------------- */
